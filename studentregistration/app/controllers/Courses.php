@@ -8,7 +8,7 @@ class Courses extends Controller{
     }
 
     /**
-     * This method will register the user
+     * This method will register the Course
      */
     public function register() {
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -80,7 +80,7 @@ class Courses extends Controller{
     }
 
     /**
-     * This method will update the registered user
+     * This method will update the registered Course
      */
     public function update($id) {
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -146,7 +146,7 @@ class Courses extends Controller{
     }
 
     /**
-     * This method will delete the registered user
+     * This method will delete the registered Course
      */
     public function delete($id) {
         $deleted = $this->courseModel->deleteCourse($id);

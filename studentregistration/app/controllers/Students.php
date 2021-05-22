@@ -1,6 +1,6 @@
 <?php
     /**
-     * Student controller: used to get the register students 
+     * Student controller: used to get the register/retreive registered students 
      * View file - register/student-registration
      */
 
@@ -9,6 +9,9 @@ class Students extends Controller {
         $this->studentModel = $this->model('Student');
     }
 
+	/**
+     * This method will register the Student
+     */
     public function register() {
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             //sanitize the incoming post data
@@ -103,7 +106,11 @@ class Students extends Controller {
 
         }
     }
-
+	
+	
+	/**
+     * This method will update the Student
+     */
     public function update($id) {
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             //sanitize the incoming post data
@@ -191,7 +198,11 @@ class Students extends Controller {
             }   
         }
     }
-
+	
+	
+	/**
+     * This method will delete the Student
+     */
     public function delete($id) {
         $deleted = $this->studentModel->deleteStudent($id);
         if($deleted['status'] == 'success') {
