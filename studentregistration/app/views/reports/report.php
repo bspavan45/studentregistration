@@ -20,7 +20,7 @@
   <?php else: ?>
     <tbody>
     <tr>
-      <td colspan="2"><p class="text-center">No Data to display</p></td>
+      <td colspan="2"><p class="text-center">Student has not been registered to any course yet</p></td>
     </tr>
   </tbody>
     <?php endif; ?>

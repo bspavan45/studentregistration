@@ -32,7 +32,7 @@
   <?php else: ?>
     <tbody>
     <tr>
-    <td colspan="6"><p class="text-center">No Data to display</p></td>
+    <td colspan="6"><p class="text-center">Student has not been registered yet</p></td>
       </tr>
   </tbody>
     <?php endif; ?>
@@ -64,7 +64,7 @@
   <?php else: ?>
     <tbody>
     <tr>
-    <td colspan="4"><p class="text-center">No Data to display</p></td>
+    <td colspan="4"><p class="text-center">Course has not been registered yet</p></td>
       </tr>
   </tbody>
     <?php endif; ?>
