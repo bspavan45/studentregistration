@@ -17,8 +17,6 @@ class Report {
         try {
             $this->dbh->query('SELECT * FROM subscription INNER JOIN student_info ON subscription.student_id = student_info.student_id INNER JOIN courses ON subscription.course_id = courses.course_id');
             $results = $this->dbh->resultSet();
-            // echo "<pre/>";
-            // print_r($results);die;
             return $results;
         } catch(PDOException $e) {
             $this->response = [

@@ -1,6 +1,6 @@
 <?php require APPROOT. '/views/inc/header.php'?>
 <div class="container">
-<h2>Detials of the registered students and registered courses</h2>
+<h2>Details of the registered students and registered courses</h2>
 </div>
 <div class="container">
 <h5>Registered Students</h5>

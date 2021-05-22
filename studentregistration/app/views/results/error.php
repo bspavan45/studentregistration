@@ -3,7 +3,7 @@
 
 <div class="card card-body bg-light mt-5 col-md-6">
 <div class="alert alert-danger" role="alert">
-<h4><?php echo $data['message'];?></h4>
+<h5 class="text-center"><?php echo $data['message'];?></h5>
 </div>
 <a class="btn btn-primary btn-success" href="<?php echo URLROOT;?>" role="button">Home Page</a>
 </div>

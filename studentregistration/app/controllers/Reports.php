@@ -12,7 +12,14 @@ class Reports extends Controller {
 
     public function index() {
         $courseDetails = $this->reportModel->getStudentCourseInfo();
-        $this->view('reports/report', $courseDetails);
+        if(isset($courseDetails['status']) && ($courseDetails['status'] == 'error')) {
+            $data = [
+                'message' => $courseDetails['message']
+            ];
+            $this->view('results/error', $data);
+        } else {
+            $this->view('reports/report', $courseDetails);
+        }
         
     }
 }

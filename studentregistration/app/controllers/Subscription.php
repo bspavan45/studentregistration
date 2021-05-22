@@ -24,13 +24,11 @@ class Subscription extends Controller {
       }
 
       public function enroll(){
-        //echo "<pre/>";print_r($_POST);die;
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $data = [
                 'student_id' => $_POST['students'],
                 'course_id' => $_POST['courses']
             ];
-            //echo "<pre/>";print_r($data);die;
             $enrollment = $this->enrollModel->registerStudentCourse($data);
             if($enrollment['status'] == 'success') {
                 $this->view('results/success', $enrollment);
