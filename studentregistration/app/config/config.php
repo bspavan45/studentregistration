@@ -10,9 +10,9 @@ define('SITENAME', 'Student Course Registration');
 
 //Database connection parameters
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
+define('DB_USER', '<db_user>');
 define('DB_PORT', 3306);
-define('DB_PASS', 'welcome2DTC');
+define('DB_PASS', '<db_pass>');
 define('DB_NAME', 'student_registration');
 
 ?>
