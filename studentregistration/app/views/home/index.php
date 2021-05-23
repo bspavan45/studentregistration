@@ -40,7 +40,7 @@
 </div>
 
 <div class="container">
-<h5>Course Information</h5>
+<h5>Registered Courses</h5>
 <table class="table" name="course_info">
   <thead class="thead-dark text-center">
     <tr>
